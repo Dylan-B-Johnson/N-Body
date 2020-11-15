@@ -5,6 +5,7 @@ A Python N-Body Simulator With 3D Graphing Over Time (in GIF format).
 The simulation uses the Verlet integration for the Particle-Particle N-Body algorithm. This implementation is O(n<sup>2</sup>). This high complexity means that the GPU really shouldn't be used, as the scales that would be required to get a benefit would take a very long time to run. The Particle Mesh algorithm is only O(n), so once it is implimented, the GPU can be used. There are four example outputs in this repository (for one of them the data was saved and plotted in GNUplot so trajectories could be seen).
 
 ### How to Use
+In nbody.py,
 1. Set arrays for x, v, and m (using one of the prebuilt methods or any other way).
 2. Set data equal to a call of VerletCPU/GPU.
 3. Choose the reporting frequency, graphing range, and output location and run the program.
