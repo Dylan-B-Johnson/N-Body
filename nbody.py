@@ -196,7 +196,8 @@ def big_mass(index,other_m_order=1.0e34, mass_multiplier=1.0e2,position=[0.0,0.0
 		v[index,:]=np.array(velocity)
 	m[index]=mass_multiplier*len(m)*other_m_order
 
-# Sets the initial conditions for the solar system 
+# Sets the initial conditions for an idealized solar system
+# These pseudo-realistic initial conditions were obtained from this web page: http://www.cyber-omelette.com/2016/11/python-N-Body-orbital-simulation.html
 def solar_system(gpu=False):
 	global x
 	global m
